@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -51,7 +53,7 @@
             </li>
 
             <li class="nav-item custom">
-              <a class="nav-link " href="help.html" style="color:white;">FAQs</a>
+              <a class="nav-link " href="#" style="color:white;"  data-bs-toggle="modal" data-bs-target="#exampleModal">FAQs</a>
             </li>
             <li class="nav-item dropdown  custom" style="color:white;">
                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" style="color:white;" data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,7 +90,7 @@
               <h1 style="color:#fff;">How can we help?</h1>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ask Your Queries....">
 
-              <input type="submit" value="Ask here" required>
+              <input type="submit" value="Ask here" required onclick="s()">
               
             </div>              
           </div>
@@ -164,7 +166,7 @@
           <a href="index.html"class="d-inline-block text-white text-decoration-none" >Home</a><br>
           <a href="abou.html"class="d-inline-block text-white text-decoration-none" > About Us</a><br>
           
-          <a href="help.html"class="d-inline-block text-white text-decoration-none" >Help</a><br>
+          <a href="helper.html"class="d-inline-block text-white text-decoration-none" >Help</a><br>
           <a href="seller.html"class="d-inline-block text-white text-decoration-none" >sell Product</a><br>
           <a href="buyer.html"class="d-inline-block text-white text-decoration-none" >Buy Product</a><br>
           
@@ -177,21 +179,47 @@
             </div>
           <div class="col-lg-3 p-4 f-font">
           <h5 class="mb-3 f-font f-font">Follow us</h5>
-          <a href="#"class="d-inline-block text-white text-decoration-none mb-2" ><i class="bi bi-twitter me-1"></i>Twitter</a><br>
+          <a href="#"class="d-inline-block text-white text-decoration-none mb-2" ><i class="fab fa-twitter" style="color:white;"></i>Twitter</a><br>
           
-          <a href="#"class="d-inline-block text-white text-decoration-none mb-2" ><i class="bi bi-facebook me-1"></i>Facebook</a><br>
+          <a href="#"class="d-inline-block text-white text-decoration-none mb-2" ><i class="fab fa-facebook" style="color:white;"></i>Facebook</a><br>
           
-          <a href="#"class="d-inline-block text-white text-decoration-none " ><i class="bi bi-instagram me-1"></i>Instagram</a><br>
+          <a href="#"class="d-inline-block text-white text-decoration-none " ><i class="fab fa-instagram" style="color:white;"></i>Instagram</a><br>
           </div>
           </div>
           </div>
           <h6 class="bg-dark text-center text-white m-0 p-4">Designed and Developed by TYRO</h6>
-       
+       <!--------modal-->
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">If you have any question then you can ask without any hesitation</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Write Down</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">back</button>
+            <button type="button" class="btn btn-success" onclick="s()">SEND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
 
 
 
-
+<script>
+  function s(){
+    alert("send your query successfully!!!!!!");
+  }
+  
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
